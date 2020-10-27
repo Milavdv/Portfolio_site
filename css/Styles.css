@@ -17,7 +17,7 @@ h6 {
 
 h4 {
     font-family: 'Encode Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.3;
 }
 
@@ -105,6 +105,10 @@ a:hover {
     padding-top: 1%;
     padding-right: 6px;
 }
+.dropdown .dropdown-menu {
+    background-color:rgba(255,255,255,0.5);
+    border: 1px solid white;
+}
 .logo-one-img {
     height: 20px; 
     float: right;
@@ -144,7 +148,7 @@ a:hover {
 }
 
 /* Portfolio menu */
-.main-text div {
+.main-text {
     padding: 0;
 }
 
@@ -173,9 +177,13 @@ a:hover {
 
 @media (max-width:1030px) {
     .wrapper {
-        text-align: center;
+        text-align: center; 
+    }
+    .main-text {
+    text-align: center;
     }
 }
+
 
 
 /* footer */
@@ -215,7 +223,7 @@ a:hover {
     border-color: #064027;
 }
 
-/* heathy toothbrush habits thrught play */
+/* -------------------   heathy toothbrush habits thrught play page  -------------------------*/
 #features div {
     text-align: center;
 }
@@ -244,7 +252,6 @@ a:hover {
 }
 .project-title-img {
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (max-width:714px) {
     .project-title-img {
@@ -277,6 +284,7 @@ a:hover {
 }
 .middle-bottom, .middle-top, .middle-right {
     width: 100%;
+    border-radius: 5px;
 }
 .middle-top {
     margin-bottom: 20px;
