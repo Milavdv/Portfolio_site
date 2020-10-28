@@ -137,8 +137,12 @@ a:hover {
     }
 }
 /* ------------- Carousel,  background */
+#front-page-carousel {
+    background-color: none;
+}
 .nav-car {
-    height: 100%;
+    position: relative;
+    height: auto;
     min-height: 500px;
 }
 
@@ -146,15 +150,25 @@ a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    overflow: hidden;
     height: 100%;
 }
-
+.carousel-item {
+    overflow: hidden;
+}
 .carousel-item img {
 
     position: relative;
     float: left;
     height: 100%;
+}
+@media (min-width:1460px) {
+    #portfolio-carousel {
+        width: 100%;
+    }
+    .carousel-item img {
+        width: auto;
+        margin: 0;
+    }
 }
 
 .main-text-block {
