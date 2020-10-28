@@ -87,19 +87,21 @@ a:hover {
     margin-left: 4px;
     padding-top: 6px;
 }
-
+.navbar-brand {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    width: 280px;
+}
 .navbar {
     padding: 1% 10%;
     z-index: 99;
     width: 100%;
 }
 
-.navbar-toggler {
-    float: right;
-}
-
-.horizontal-line {
-    font-stretch: extra-expanded;
+.dropdown-menu {
+    padding-right: 10%;
 }
 
 
@@ -113,13 +115,7 @@ a:hover {
     color: #054a76;
 }
 
-.navbar-brand {
-    font-family: 'Encode Sans Condensed', sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
-    letter-spacing: 0.2rem;
-    width: 300px;
-}
+
 @media (min-width:923px) { /* desktop size upwards */
     .dropdown-menu {
         background-color: rgba(255, 255, 255, 0.6);
@@ -127,7 +123,13 @@ a:hover {
     }
 }
 @media (max-width:923px) { /* tablet screen and smaller */
-    
+    .dropdown-menu {
+        background-color: transparent;
+        border: none;
+    }
+    .navbar-dark li a{
+        color: white;
+    }
 }
 @media (max-width:714px) { /* mobile screen only */
     .navbar {
@@ -238,7 +240,6 @@ a:hover {
     border-color: #064027;
 }
 
-@media (max-width:714px)
 /* ---------------------------   project pages protfolio  ---------------------------------*/
 
 .project-title {
