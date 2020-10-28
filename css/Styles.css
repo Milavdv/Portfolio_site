@@ -66,33 +66,7 @@ a:hover {
     padding: 5% 10%;
 }
 
-/* Carousel */
-.nav-car {
-    height: 100%;
-    min-height: 500px;
-}
-
-#portfolio-carousel {
-    position: absolute;
-    top: 0;
-    right: 0;
-    overflow: hidden;
-    height: 100%;
-}
-
-.carousel-item img {
-
-    position: relative;
-    float: left;
-    height: 100%;
-}
-
-.main-text-block {
-    padding: 7% 10%;
-    color: #FFF;
-}
-
-/* Navbar */
+/* ------------ Navbar */
 .logo-one {
     position: absolute;
     z-index: 99;
@@ -160,8 +134,34 @@ a:hover {
         padding-right: 1% !important;
     }
 }
+/* ------------- Carousel,  background */
+.nav-car {
+    height: 100%;
+    min-height: 500px;
+}
 
-/* Portfolio menu */
+#portfolio-carousel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel-item img {
+
+    position: relative;
+    float: left;
+    height: 100%;
+}
+
+.main-text-block {
+    padding: 7% 10%;
+    color: #FFF;
+}
+
+
+/* ---------------- Portfolio menu, on top of carousel */
 .main-text {
     padding: 0;
 }
@@ -201,7 +201,7 @@ a:hover {
 
 
 
-/* footer */
+/* -------------  footer */
 
 #footer {
     color: #f0f7f4;
@@ -282,7 +282,7 @@ a:hover {
     }
 }
 
-/* overview - three rows middle container */
+/* ---------- project overview, the three rows middle container */
 .middle-bottom,
 .middle-top,
 .middle-right img {
@@ -299,7 +299,7 @@ a:hover {
     padding-bottom: 7%;
 }
 
-/* features */
+/* ---------------- features */
 #features div {
     text-align: center;
 }
@@ -313,7 +313,7 @@ a:hover {
     margin: 0 auto;
 }
 
-/* heathy toothbrush habits thrught play page */
+/* ------------------ heathy toothbrush habits thrught play page ---------------------------------*/
 #root .middle-right {
     padding-left: 0;
     padding-right: 0;
