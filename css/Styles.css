@@ -143,17 +143,15 @@ a:hover {
 .nav-car {
     position: relative;
     height: auto;
-    min-height: 500px;
+    min-height: 97%;
+    overflow: hidden;
 }
 
 #portfolio-carousel {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
-}
-.carousel-item {
-    overflow: hidden;
+    height:100%;
 }
 .carousel-item img {
 
@@ -163,7 +161,7 @@ a:hover {
 }
 @media (min-width:1460px) {
     #portfolio-carousel {
-        width: 100%;
+        height: 110%;
     }
     .carousel-item img {
         width: auto;
