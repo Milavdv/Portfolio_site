@@ -4,7 +4,6 @@ body {
     color: black;
     line-height: 1.7;
 }
-
 h1,
 h2,
 h3,
@@ -14,7 +13,6 @@ h6 {
     font-weight: 400;
     letter-spacing: 1px;
 }
-
 h4 {
     font-family: 'Encode Sans', sans-serif;
     font-weight: 500;
@@ -26,7 +24,19 @@ hr {
     border-color: #89968b;
     width: 86%;
 }
-
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.radius {
+    
+}
+.dark-hr {
+    border-color: #064027;
+}
+.big-hr {
+    border-top:5px dotted #f22663;
+    width: 40%;
+}
 /* Sections */
 .light-section h1,
 .light-section h2,
@@ -49,6 +59,9 @@ h4.dark-section {
 .dark-section {
     color: white;
     background-color: #001A0F;
+}
+.dark-section .big-hr {
+    border-top-color: white;
 }
 
 /* Links */
@@ -98,6 +111,7 @@ a:hover {
     padding: 1% 10%;
     z-index: 99;
     width: 100%;
+    background: none;
 }
 
 .dropdown-menu {
@@ -248,68 +262,60 @@ a:hover {
     padding-bottom: 15px;
 }
 
-.dark-hr {
-    border-color: #064027;
-}
 
 /* ---------------------------   project pages protfolio  ---------------------------------*/
-
-.project-title {
-    height: auto;
-    display: flex;
+.project img {
+    border-radius: 6px;
 }
-
-.project-title h1 {
-    font-size: 3rem;
+.project h1 {
+    font-size: 3.4rem;
     line-height: 1.3;
 }
-
-.project-title-img {
-    border-radius: 5px;
+@media (min-width:992px) {
+    .project-title-img  {
+        margin-right:-20%;
+    }
 }
-
 @media (max-width:714px) {
     .project-title-img {
         width: 100%;
         margin-top: 7%;
     }
-
-    .project-title-text {
-        position: relative;
-        margin-top: 10%;
-    }
 }
 
 @media (min-width:715px) {
     .project-title-img {
-        position: relative;
+       
         float: right;
         width: 70%;
-        margin-top: 7%;
+        display: block;
     }
 
     .project-title-text {
         position: absolute;
-        margin-top: 20%;
+        margin: 10% auto auto 10%;
         z-index: 99;
     }
 }
 
-/* ---------- project overview, the three rows middle container */
-.middle-bottom,
-.middle-top,
-.middle-right img {
+
+/* ---------- project overview */
+.project-overview img {
     width: 100%;
-    border-radius: 5px;
 }
 
-.middle-top,
-.middle-bottom {
-    margin-bottom: 20px;
-}
 
-.middle-text {
-    padding-bottom: 7%;
+/* ---------------- research */
+.research img {
+    width: 100%;
+}
+.window img {
+    width: 47%;
+    margin: 0 3px 9px;
+}
+/* ---------------- Result */
+.result img{
+    width: 100%;
 }
 
 /* ---------------- features */
@@ -324,18 +330,39 @@ a:hover {
 
 .key-features {
     margin: 0 auto;
+    text-align: center;
 }
 
 /* ------------------ heathy toothbrush habits thrught play page ---------------------------------*/
-#root .middle-right {
-    padding-left: 0;
-    padding-right: 0;
-}
 
-#root .middle-container {
-    padding-right: 0;
+#root .features {
+    background-color: #6a81b0;
 }
-
-#root #features {
+#root .research {
     background-color: #b1cadd;
 }
+#root .result .container-fluid {
+    padding-left:0;
+} 
+#root .result p {
+    padding-left:10%;
+} 
+.flow-chart {
+    padding: 10% 0 10%;
+}
+.root-end img {
+    margin-bottom: 15px;
+
+    }
+
+@media (min-width:714px) {
+.root-end {
+    margin-top: -10%;
+    z-index: 2;
+}
+    }
+@media (max-width:992px) {
+.root-end {
+    padding-left: 10%;
+}
+    }
